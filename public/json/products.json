@@ -1,0 +1,124 @@
+[
+    {
+        "id": 1,
+        "idCategory":1,
+        "Title": "El Resplandor - Stephen King",
+        "Genre": "Novela de Terror",
+        "Price": 3700,
+        "Desc": "Jack Torrance está en busca de un nuevo comienzo en su vida. Su esposa quiere mantener a la familia unida. Y su pequeño hijo, Danny, es el único en darse cuenta del mal que los acecha.",
+        "Year": "1977",
+        "Lang": "Español",
+        "stock": 30,
+        "img": "libro-Resplandor.jpg"
+    },
+    {
+        "id": 2,
+        "idCategory":1,
+        "Title": "A Game of Thrones - George R.R. Martin",
+        "Genre": "Fantasía Medieval",
+        "Price": 4800,
+        "Desc": "Winter is coming. Such is the stern motto of House Stark, the northernmost of the fiefdoms that owe allegiance to King Robert Baratheon in far-off King's Landing. There Eddard Stark of Winterfell rules in Robert's name. Far to the north, behind the towering Wall, lie savage Wildings and worse - unnatural things relegated to myth during the centuries-long summer, but proving all too real and all too deadly in the turning of the season.",
+        "Year": "1996",
+        "Lang": "Inglés",
+        "stock": 17,
+        "img": "libro-AGameOfThrones.jpg"
+    },
+    {
+        "id": 3,
+        "idCategory":1,
+        "Title": "Noah - Sebastian Fitzek",
+        "Genre": "Thriller - Suspenso",
+        "Price": 2800,
+        "Desc": "Él no recuerda su propio nombre. No sabe de dónde proviene. No logra recordar cómo llegó a Berlín y cuánto hace que vive en la calle. Los sin techo con los que vagabundea por la ciudad lo llaman Noah, porque lleva ese nombre tatuado en la palma de la mano.",
+        "Year": "2014",
+        "Lang": "Español",
+        "stock": 22,
+        "img": "libro-Noah.jpg"
+    },
+    {
+        "id": 4,
+        "idCategory":2,
+        "Title": "4000 Años De Controles De Precios Y Salarios - Laissez Faire",
+        "Genre": "Economía",
+        "Price": 2600,
+        "Desc": "Esta obra constituye un valioso y oportuno aporte tanto para nuestro conocimiento como para el debate sobre cómo no combatir a la inflación.",
+        "Year": "2016",
+        "Lang": "Español",
+        "stock": 11,
+        "img": "NF-PreciosYSalarios.jpg"
+    },
+    {
+        "id": 5,
+        "idCategory":2,
+        "Title": "Anatomía Con Orientación Clínica 8ª Edición - Moore",
+        "Genre": "Medicina - Universitario",
+        "Price": 8900,
+        "Desc": "Anatomía con orientación clínica proporciona a estudiantes de medicina y otras áreas afines la información anatómica que necesitan para su formación teórica y práctica.",
+        "Year": "2018",
+        "Lang": "Español",
+        "stock": 5,
+        "img": "NF-AnatomiaClinica.jpg"
+    },
+    {
+        "id": 6,
+        "idCategory":2,
+        "Title": "English File Pre-intermediate 4th.edition - Student's Book - Oxford",
+        "Genre": "Inglés",
+        "Price": 6000,
+        "Desc": "The English File fourth edition Student's Book is packed full of interesting content to keep students of all levels talking.",
+        "Year": "2019",
+        "Lang": "Inglés",
+        "stock": 23,
+        "img": "NF-Ingles.jpg"
+    },
+    {
+        "id": 7,
+        "idCategory":3,
+        "Title": "Peter Parker El Espectacular Spiderman Punto De Ruptura - Marvel",
+        "Genre": "Superheroes",
+        "Price": 11000,
+        "Desc": "La esperada continuación de Noches de Nueva York.",
+        "Year": "2022",
+        "Lang": "Español",
+        "stock": 2,
+        "img": "Com-Spider.jpg"
+    },
+    {
+        "id": 8,
+        "idCategory":3,
+        "Title": "Me Prometiste Oscuridad - Damian Connelly",
+        "Genre": "Distópico",
+        "Price": 1900,
+        "Desc": "Cada 75 años, el cometa Halley orbita alrededor del sol otorgando a diferentes personas en el planeta Tierra sorprendentes habilidades, dándole auras especiales que les permiten hacer cosas sobrenaturales. Pero también, esas auras pueden estar malditas.",
+        "Year": "2021",
+        "Lang": "Español",
+        "stock": 13,
+        "img": "Com-Prometiste.jpg"
+    },
+    {
+        "id": 9,
+        "idCategory":4,
+        "Title": "Manga Death Note - Pack Entero - Ivrea",
+        "Genre": "Misterio - Thriller",
+        "Price": 10000,
+        "Desc": "La historia se centra en Light Yagami, un estudiante de escuela secundaria. Un día, encuentra un cuaderno con poderes sobrenaturales llamado «Death Note», con el cual es capaz de matar personas si se escriben los nombres de estas en él, a la vez que si el portador visualiza mentalmente la cara de quien quiere asesinar.",
+        "Year": "2019",
+        "Lang": "Español",
+        "stock": 13,
+        "img": "Man-DeathNote.jpg"
+    },
+    {
+        "id": 10,
+        "idCategory":5,
+        "Title": "Album Doble Dua Lipa Future Nostalgia + Club Future",
+        "Genre": "Pop",
+        "Price": 2700,
+        "Desc": "Con su poderosa voz ella le dio un nuevo rumbo a la música pop, y con su distintivo estilo, se ha convertido en una de las más esperadas de las premiaciones. ",
+        "Year": "2020",
+        "Lang": "Inglés",
+        "stock": 13,
+        "img": "CD-DL.jpg"
+    }
+  
+  
+]

@@ -1,8 +1,10 @@
 import React from 'react';
-import Dropdown from './dropdown';
-import SearchForm from './searchForm';
-import Sections from './sections';
-import CartWidget from './CartWidget';
+import Dropdown from '../layouts/dropdown';
+import SearchForm from '../layouts/searchForm';
+import Sections from '../layouts/sections';
+import CartWidget from '../layouts/CartWidget';
+import {Link} from 'react-router-dom'
+
 
 const NavBar = () => {
     const searchBarText = ["Buscar en Lectulandia", "Buscar"]
@@ -10,7 +12,7 @@ const NavBar = () => {
         <>
             <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
                 <div className="container-fluid">
-                    <a className="navbar-brand" href="#">Lectulandia</a>
+                    <Link className="navbar-brand" to="/">Lectulandia</Link>
                     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor02" aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
                     <span className="navbar-toggler-icon" />
                     </button>

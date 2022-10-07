@@ -5,7 +5,7 @@ const Sections = () => {
     return (
         <>
             <li className="nav-item">
-                <Link className="nav-link active" to="/">Home
+                <Link className="nav-link active" to="/" onClick={() => {window.location.href="/"}}>Home
                     <span className="visually-hidden">(current)</span>
                 </Link>
             </li>

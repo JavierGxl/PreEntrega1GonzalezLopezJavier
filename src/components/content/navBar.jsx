@@ -1,6 +1,5 @@
 import React from 'react';
 import Dropdown from '../layouts/dropdown';
-import SearchForm from '../layouts/searchForm';
 import Sections from '../layouts/sections';
 import CartWidget from '../layouts/CartWidget';
 import {Link} from 'react-router-dom'
@@ -21,7 +20,6 @@ const NavBar = () => {
                     <Sections/> 
                     <Dropdown/>
                     </ul>
-                    <SearchForm searchBarInfo={searchBarText}/>
                     </div>
                     <CartWidget/>
                 </div>

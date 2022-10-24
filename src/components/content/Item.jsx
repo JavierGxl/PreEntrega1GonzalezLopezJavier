@@ -1,7 +1,25 @@
-import React from 'react';
+import React, {useState, useContext} from 'react';
 import "./itemListContainerCSS.css"
+import {CartContext} from "../../Context/CartContext"
+
+
 
 const Item = ({item}) => {
+    const [cantidad, setCantidad] = useState(1);
+    
+    const {cart, addItem, removeItem} = useContext(CartContext)
+
+    const cantItem = (operacion) => {
+      if(operacion == "+") {
+          if(cantidad < item.stock) {
+            setCantidad(cantidad + 1)
+          }   
+      } else {
+        if(cantidad > 1) {
+          setCantidad(cantidad - 1)
+        }
+    }
+  }
     return (
         <>
             <div className="hello">
@@ -23,9 +41,15 @@ const Item = ({item}) => {
                     <div className="card-body">
                     
                     </div>
+                    <button className='btn btn-dark' onClick={() => cantItem("+")}>+</button>
+                    <h4 className='card-text centered'>{cantidad}</h4>
+                    <button className='btn btn-dark' onClick={() => cantItem("-")}>-</button>
                     <div className="card-footer text-muted">
-                        <button type="button" className="btn btn-primary">Añadir al Carrito</button>
+                        <button type="button" className="btn btn-primary" onClick={addItem}>Añadir al Carrito</button>
                     </div>
+                    
+                    
+
                 </div>
                 
             </div>

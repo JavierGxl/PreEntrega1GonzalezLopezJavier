@@ -21,4 +21,4 @@ La base de datos utilizada contiene dos colecciones de datos. Aquella con los da
 Por otro lado, la base de datos no actualiza el stock al finalizar la compra ya que se trata tan solo de una prueba y la idea es que pueda ser utilizada por un tiempo indeterminado sin tener que recargar los datos de productos. En lugar de esto, al terminar, el sitio borra el carrito y devuelve a uno a la página de inicio para que se pueda seguir probando.
 
 ## Recorrido de la página.
-En el siguiente vídeo se puede observar un recorrido que demuestra las distintas funcionalidades del sitio web (https://youtu.be/fiVN-s6LGj4).
+En el siguiente vídeo se puede observar un recorrido que demuestra las distintas funcionalidades del sitio web (https://youtu.be/GOZakMKd2uM).

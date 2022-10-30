@@ -17,9 +17,7 @@ const Cart = () => {
         <p className="card-text">Precio: {item.Price}</p>
         <p className="card-text">Cantidad: {item.cantidad}</p>
         <p className="card-text">Precio Total: {item.Price * item.cantidad}</p>
-        <button className="btn btn-dark" onClick={() => removeItem(item)}>
-          Eliminar
-        </button>
+        <button className="btn btn-dark" onClick={() => removeItem(item)}> Eliminar</button>
       </div>
     ));
     console.log(itemAmm);

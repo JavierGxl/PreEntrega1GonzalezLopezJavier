@@ -3,6 +3,7 @@ import { Link, Navigate } from "react-router-dom";
 import { CartContext } from "../../Context/CartContext";
 import { createPurchaseOrder } from "../utils/firebase";
 import SaleFinished from "./SaleFinished";
+import "../../App.css";
 
 const FinishSale = () => {
   const { cart } = useContext(CartContext);
@@ -15,6 +16,7 @@ const FinishSale = () => {
   const [showModal, setShowModal] = useState(false);
   const [showForm, setShowForm] = useState(true);
   const [orderIdDisplay, setOrderIdDisplay] = useState();
+  const [localCart, setLocalCart] = useState([]);
   let sum = 0;
 
   useEffect(() => {
@@ -23,6 +25,17 @@ const FinishSale = () => {
       return sum + i;
     });
     setFinalPrice(getFinalPricing);
+  }, [cart]);
+
+  useEffect(() => {
+    const getLocalCart = cart.map((item) => (
+      <div className="card cardProducto" key={item.id}>
+        <h5 className="card-title">{item.Title}</h5>
+        <p className="card-text">Cantidad: {item.cantidad}</p>
+        <p className="card-text">Precio Total: {item.Price * item.cantidad}</p>
+      </div>
+    ));
+    setLocalCart(getLocalCart);
   }, [cart]);
 
   function getNameInfo(val) {
@@ -48,101 +61,103 @@ const FinishSale = () => {
 
   return (
     <div>
-      {showModal ? SaleFinished({ orderIdDisplay }) : null}
-      {
-        <div>
-          <h2>Por favor, complete los datos.</h2>
-          <form
-            onSubmit={(ev) => {
-              ev.preventDefault();
-              if (mailAdressInfo == mailAdressConfirmed) {
-                createPurchaseOrder(
-                  finalPrice,
-                  nameInfo,
-                  surnameInfo,
-                  phoneNumber,
-                  mailAdressInfo
-                ).then((order) => {
-                  const orderId = order.id;
-                  setOrderIdDisplay(orderId);
-                  setShowModal(true);
-                  setShowForm(false);
-                  console.log(orderId);
-                });
-              }
-            }}
-          >
-            <label className="col-form-label mt-4" htmlFor="inputDefault">
-              Nombre
-            </label>
-            <input
-              type="text"
-              className="form-control"
-              placeholder="Nombre"
-              id="inputDefault"
-              autoComplete="off"
-              name="name"
-              required
-              onChange={getNameInfo}
-            />
-            <label className="col-form-label mt-4" htmlFor="inputDefault">
-              Apellido
-            </label>
-            <input
-              type="text"
-              className="form-control"
-              placeholder="Surname"
-              id="inputDefault"
-              autoComplete="off"
-              name="Surname"
-              required
-              onChange={getSurnameInfo}
-            />
-            <label className="col-form-label mt-4" htmlFor="inputDefault">
-              Número de Teléfono
-            </label>
-            <input
-              type="number"
-              className="form-control"
-              placeholder="phoneNumber"
-              id="inputDefault"
-              autoComplete="off"
-              name="phoneNumber"
-              required
-              onChange={getPhoneNumber}
-            />
-            <label className="col-form-label mt-4" htmlFor="inputDefault">
-              Dirección de Mail
-            </label>
-            <input
-              type="email"
-              className="form-control"
-              placeholder="mailAdress"
-              id="inputDefault"
-              autoComplete="off"
-              name="mailAdress"
-              required
-              onChange={getMailInfo}
-            />
-            <label className="col-form-label mt-4" htmlFor="inputDefault">
-              Confirmar Dirección
-            </label>
-            <input
-              type="email"
-              className="form-control"
-              placeholder="mailAdressConfirmed"
-              id="inputDefault"
-              autoComplete="off"
-              name="mailAdressConfirmed"
-              required
-              onChange={getMailInfoConf}
-            />
-            <button type="submit" className="btn btn-dark">
-              Completar
-            </button>
-          </form>
+      {showModal ? SaleFinished({ orderIdDisplay }) : <div>
+      {localCart}
+        <h2>Total a pagar: {finalPrice}</h2>
+          <div>
+            <h2>Por favor, complete los datos.</h2>
+            <form
+              onSubmit={(ev) => {
+                ev.preventDefault();
+                if (mailAdressInfo == mailAdressConfirmed) {
+                  createPurchaseOrder(
+                    finalPrice,
+                    nameInfo,
+                    surnameInfo,
+                    phoneNumber,
+                    mailAdressInfo
+                  ).then((order) => {
+                    const orderId = order.id;
+                    setOrderIdDisplay(orderId);
+                    setShowModal(true);
+                    setShowForm(false);
+                    console.log(orderId);
+                  });
+                }
+              }}
+            >
+              <label className="col-form-label mt-4" htmlFor="inputDefault">
+                Nombre
+              </label>
+              <input
+                type="text"
+                className="form-control"
+                placeholder="Nombre"
+                id="inputDefault"
+                autoComplete="off"
+                name="name"
+                required
+                onChange={getNameInfo}
+              />
+              <label className="col-form-label mt-4" htmlFor="inputDefault">
+                Apellido
+              </label>
+              <input
+                type="text"
+                className="form-control"
+                placeholder="Surname"
+                id="inputDefault"
+                autoComplete="off"
+                name="Surname"
+                required
+                onChange={getSurnameInfo}
+              />
+              <label className="col-form-label mt-4" htmlFor="inputDefault">
+                Número de Teléfono
+              </label>
+              <input
+                type="number"
+                className="form-control"
+                placeholder="phoneNumber"
+                id="inputDefault"
+                autoComplete="off"
+                name="phoneNumber"
+                required
+                onChange={getPhoneNumber}
+              />
+              <label className="col-form-label mt-4" htmlFor="inputDefault">
+                Dirección de Mail
+              </label>
+              <input
+                type="email"
+                className="form-control"
+                placeholder="mailAdress"
+                id="inputDefault"
+                autoComplete="off"
+                name="mailAdress"
+                required
+                onChange={getMailInfo}
+              />
+              <label className="col-form-label mt-4" htmlFor="inputDefault">
+                Confirmar Dirección
+              </label>
+              <input
+                type="email"
+                className="form-control"
+                placeholder="mailAdressConfirmed"
+                id="inputDefault"
+                autoComplete="off"
+                name="mailAdressConfirmed"
+                required
+                onChange={getMailInfoConf}
+              />
+              <button type="submit" className="btn btn-dark">
+                Completar
+              </button>
+            </form>
+          </div>
         </div>
-      }
+            }
     </div>
   );
 };

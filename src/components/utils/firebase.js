@@ -41,15 +41,14 @@ const uploadDB = async () => {
 };
 
 const getItem = async (id) => {
-  const item = await getDoc(doc(db, "items", id));
-  const prod = [item.id, item.data()];
-  return prod;
+  const item = await getDoc(doc(db, "items", id))
+  const prod = [item.id, item.data()]
+  return prod
 };
 
-const getItems = async () => {
-  const products = await getDocs(collection(db, "items"));
-  const items = products.docs.map((item) => [item.id, item.data()]);
-  return items;
+const getItems = async () => { const products = await getDocs(collection(db, "items"))
+  const items = products.docs.map((item) => [item.id, item.data()])
+  return items
 };
 
 const createPurchaseOrder = async (

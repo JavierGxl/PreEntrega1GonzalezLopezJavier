@@ -28,11 +28,13 @@ const Cart = () => {
   }, [cart]);
 
   useEffect(() => {
-    const getItemAmm = cart.map((item) => item.cantidad);
-    const getFinalAmm = getItemAmm.reduce(function (sum, i) {
-      return sum + i;
-    });
-    setItemAmm(getFinalAmm);
+    if (cart.length != 0) {
+      const getItemAmm = cart.map((item) => item.cantidad);
+      const getFinalAmm = getItemAmm.reduce(function (sum, i) {
+        return sum + i;
+      });
+      setItemAmm(getFinalAmm);
+    }
   }, [cart]);
 
   const app =

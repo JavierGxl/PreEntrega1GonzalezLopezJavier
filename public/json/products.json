@@ -1,7 +1,7 @@
 [
     {
         "id": 1,
-        "idCategory":1,
+        "idCategory":"1",
         "Title": "El Resplandor - Stephen King",
         "Genre": "Novela de Terror",
         "Price": 3700,
@@ -9,7 +9,7 @@
         "Year": "1977",
         "Lang": "Español",
         "stock": 30,
-        "img": "libro-Resplandor.jpg"
+        "img": "https://firebasestorage.googleapis.com/v0/b/gonzalezlopezjavierreactjs.appspot.com/o/img%2Flibro-Resplandor.jpg?alt=media&token=dbb0184a-3990-4f14-b339-568674458441"
     },
     {
         "id": 2,
@@ -21,7 +21,7 @@
         "Year": "1996",
         "Lang": "Inglés",
         "stock": 17,
-        "img": "libro-AGameOfThrones.jpg"
+        "img": "https://firebasestorage.googleapis.com/v0/b/gonzalezlopezjavierreactjs.appspot.com/o/img%2Flibro-AGameOfThrones.jpg?alt=media&token=092cd28d-81d2-4911-89d6-dd24919dae08"
     },
     {
         "id": 3,
@@ -33,7 +33,7 @@
         "Year": "2014",
         "Lang": "Español",
         "stock": 22,
-        "img": "libro-Noah.jpg"
+        "img": "https://firebasestorage.googleapis.com/v0/b/gonzalezlopezjavierreactjs.appspot.com/o/img%2Flibro-Noah.jpg?alt=media&token=06d9f1eb-b92a-4134-9f6b-81013d9a1874"
     },
     {
         "id": 4,
@@ -45,7 +45,7 @@
         "Year": "2016",
         "Lang": "Español",
         "stock": 11,
-        "img": "NF-PreciosYSalarios.jpg"
+        "img": "https://firebasestorage.googleapis.com/v0/b/gonzalezlopezjavierreactjs.appspot.com/o/img%2FNF-PreciosYSalarios.jpg?alt=media&token=9bd7434b-f47f-4901-a79c-8f16609e7e60"
     },
     {
         "id": 5,
@@ -57,7 +57,7 @@
         "Year": "2018",
         "Lang": "Español",
         "stock": 5,
-        "img": "NF-AnatomiaClinica.jpg"
+        "img": "https://firebasestorage.googleapis.com/v0/b/gonzalezlopezjavierreactjs.appspot.com/o/img%2FNF-AnatomiaClinica.jpg?alt=media&token=ad5e0311-522e-482a-b509-d1f3e1f1cacf"
     },
     {
         "id": 6,
@@ -69,7 +69,7 @@
         "Year": "2019",
         "Lang": "Inglés",
         "stock": 23,
-        "img": "NF-Ingles.jpg"
+        "img": "https://firebasestorage.googleapis.com/v0/b/gonzalezlopezjavierreactjs.appspot.com/o/img%2FNF-Ingles.jpg?alt=media&token=026bf761-b892-4cf1-8410-d5351b3ed046"
     },
     {
         "id": 7,
@@ -81,7 +81,7 @@
         "Year": "2022",
         "Lang": "Español",
         "stock": 2,
-        "img": "Com-Spider.jpg"
+        "img": "https://firebasestorage.googleapis.com/v0/b/gonzalezlopezjavierreactjs.appspot.com/o/img%2FCom-Spider.jpg?alt=media&token=4cebbed1-ddaa-4d8c-b542-74777123a00c"
     },
     {
         "id": 8,
@@ -93,7 +93,7 @@
         "Year": "2021",
         "Lang": "Español",
         "stock": 13,
-        "img": "Com-Prometiste.jpg"
+        "img": "https://firebasestorage.googleapis.com/v0/b/gonzalezlopezjavierreactjs.appspot.com/o/img%2FCom-Prometiste.jpg?alt=media&token=fee61ac8-6546-4c51-ad75-4ce734bf1698"
     },
     {
         "id": 9,
@@ -105,7 +105,7 @@
         "Year": "2019",
         "Lang": "Español",
         "stock": 13,
-        "img": "Man-DeathNote.jpg"
+        "img": "https://firebasestorage.googleapis.com/v0/b/gonzalezlopezjavierreactjs.appspot.com/o/img%2FMan-DeathNote.jpg?alt=media&token=1572baf0-a361-4952-9f88-15acdae182b1"
     },
     {
         "id": 10,
@@ -117,7 +117,7 @@
         "Year": "2020",
         "Lang": "Inglés",
         "stock": 13,
-        "img": "CD-DL.jpg"
+        "img": "https://firebasestorage.googleapis.com/v0/b/gonzalezlopezjavierreactjs.appspot.com/o/img%2FCD-DL.jpg?alt=media&token=07c8eb86-a8c6-4f04-9514-833d1b8a8b39"
     }
   
   
